@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mockrest</title>
+    <meta name="description" content="Mock copy of pinterest" />
+    <meta name="keywords" content="images, mock, html" />
+    <meta name="author" content="Andres Muniz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- primero el cabecero divido en tres. dos navegaciones uno navegacion a la derecha y otro navegacion a la derecha. el ultimo contiene los botones para registrarse.  -->
+    <header>
+      <div id="nav-left">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">
+                <svg
+                  class="logo-svg"
+                  role="img"
+                  height="32"
+                  width="32"
+                  viewBox="0 0 24 24"
+                  alt="Mockrest Logo"
+                >
+                  <path
+                    d="M 12.042178,2.0062317 C 5.557462,1.7602389 0.34566475,8.8435443 2.4893145,14.958751 4.1716173,21.221258 12.476813,24.117639 17.688467,20.255891 23.177499,16.798143 23.488831,8.0099223 18.258252,4.1725488 16.508671,2.7770664 14.279972,2.0006478 12.042178,2.0062317 Z M 9.0588054,8.2866773 c 0.8344975,0 1.6689886,0 2.5034866,0 0.184308,1.154705 0.334017,2.3145637 0.50056,3.4719167 0.146983,-1.157306 0.293971,-2.3146107 0.440961,-3.4719167 0.840577,0 1.681161,0 2.521739,0 0,2.4783287 0,4.9566597 0,7.4349897 -0.563372,0 -1.126743,0 -1.690121,0 0,-1.67315 0,-3.346303 0,-5.01946 -0.225069,1.673157 -0.450142,3.34631 -0.675216,5.01946 -0.399622,0 -0.799245,0 -1.198861,0 -0.23736,-1.634917 -0.474728,-3.269841 -0.712087,-4.904764 0,1.634923 0,3.269847 0,4.904764 -0.563485,0 -1.1269698,0 -1.6904617,0 0,-2.47833 0,-4.956661 1e-7,-7.4349897 z"
+                  ></path>
+                </svg>
+                <h1 class="lH1 dyH iFc H2s bwj c8S zDA">Mockrest</h1>
+              </a>
+            </li>
+            <li>
+              <a href="#search"><h2>Ideas</h2></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="nav-right">
+        <ul>
+          <li>
+            <a href="info"><h2>Informacion</h2></a>
+          </li>
+          <li>
+            <a href="empresa"><h2>Empresa</h2></a>
+          </li>
+          <li>
+            <a href="blog"><h2>Blog</h2></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button type="submit" id="boton-start">Iniciar session</button>
+        <button type="submit" id="boton-Reg">Registrarse</button>
+      </div>
+    </header>
+    <script src="" async defer></script>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <main>
+      <!-- dividimos el main en secciones. la primera seccion es un carousell tablas yo aqui hice 2 tablas (la idea es que el css las translada de una a otra). cada tabla tiene un monton de imagenes. 
+lo hice tabla porque noté que el contenido se salia por los bordes al hacer la pantalla mas pequeña y asumi que se podia mas facil con etiquetado de columnas. 
+Asumo que UL acepata pading para posicionarlo-->
+      <section id="carrousel">
+        <h3>Encuentra la proxima</h3>
+        <table id="table1">
+          <tbody>
+            <tr>
+              <td rowspan="2">
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td colspan="5"><h4>primera tabla</h4></td>
+              <td rowspan="2">
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="MinPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="MaxPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="MinPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="table2">
+          <tbody>
+            <tr>
+              <td rowspan="2">
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td colspan="5"><h4>Segunda tabla</h4></td>
+              <td rowspan="2">
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul class="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul class="MinPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="MaxPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="MinPadCol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+              <td>
+                <ul id="NoPadcol">
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" /></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--la siguiente seccion esta devidido en dos mitades. de igual importancia. pero la de la izquierda tiene un monton de div uno encima de otro.  -->
+      <section id="search">
+        <div class="search-left">
+          <a href="#search">
+            <div id="container">
+              <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
+              <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
+              <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
+              <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
+              <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
+              <div class="overlay">
+                <h3>
+                  clica en cualquier lado que te llevo a por recetas de pollo
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="Search-right">
+          <div>
+            <h3>Busca cosas guapas</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
+              deleniti ab expedita accusamus unde quo delectus tempora!
+              Temporibus, modi hic.
+            </p>
+          </div>
+          <a href="#search">
+            <button type="button">buscador</button>
+          </a>
+        </div>
+      </section>
+      <section id="save">
+        <div id="save-left"><h3>Guarda tus ideas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
+            deleniti ab expedita accusamus unde quo delectus tempora!
+            Temporibus, modi hic.
+          </p>
+          <a href="#search">
+            <button type="button">buscador</button>
+          </a>
+        </div>
+        
+        <div id="Save-right">
+              <div id="container">
+                <div class="imagen1"><a href="#search"><img src="avatarRota1.png" alt="" /></a></div>
+               <div class="imagen1"><a href="#search"><img src="avatarRota1.png" alt="" /></a></div>
+                <div class="imagen1"><a href="#search"><img src="avatarRota1.png" alt="" /></a></div>
+                <div class="imagen1"><a href="#search"><img src="avatarRota1.png" alt="" /></a></div>
+                <div class="imagen1"><a href="#search"><img src="avatarRota1.png" alt="" /></a></div>
+                </div>
+              </div>
+          
+        </div>
+      </section>
+      <section id="shop">
+        <div id="shop-left">
+          <a href="#search">
+          <img src="avatar.png"  alt="imagen maquillaje">
+          <div class="overlay"><img src="avatar.png"  alt="imagen maquillaje"></div>
+        </a>
+        </div>
+        <div id="shop-right">
+          <h3>Guarda tus ideas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
+            deleniti ab expedita accusamus unde quo delectus tempora!
+            Temporibus, modi hic.
+          </p>
+          <a href="#search">
+            <button type="button">buscador</button>
+          </a>
+        </div>
+      </section>
+      <section id="bottom">
+        <div id="bottom-left">
+          <h3>Registarate!</h3>
+        </div>
+        <div id="bottom right">
+        <form  method="POST" novalidate="">
+          <div >
+            <label  for="email">
+              <div >Correo</div>
+            </label>
+          </div>
+          <div >
+            <fieldset >
+              <div >
+                <label  for="email">Continuar con el correo
+              </label>
+            </div>
+            <span>
+              <div >
+                <input  autocomplete="email"  id="email" name="id" placeholder="Correo" spellcheck="false" type="email" value="" >
+              </div>
+            </span>
+          </fieldset>
+        </div>
+        <div ><label  for="password">
+          <div>Contraseña</div>
+        </label>
+      </div>
+      <div >
+        <fieldset >
+          <div >
+            <label  for="password">Crea una contraseña</label>
+          </div>
+          <span>
+            <div >
+              <input  autocomplete="new-password"  id="password" name="password" placeholder="Crea una contraseña" spellcheck="false" type="password" value="">
+            </div>
+          </span>
+        </fieldset>
+      </div>
+      <div>
+        <div >
+          <div >
+            <label  for="birthdate">
+              <div >Fecha de nacimiento</div>
+            </label>
+          </div>
+          <div >
+            <div aria-label="te pedimos edad primero para asegurarnos de no hacer nada illegal. Y segundo para poder hacer un perfil de ti y vender tus datos" ><svg class="gUZ ztu U9O kVc" height="16" width="16" viewBox="0 0 24 24" aria-label="Información" role="img"><path d="M12 9a1.5 1.5 0 1 1-.001-2.999A1.5 1.5 0 0 1 12 9zm1.5 7.5a1.5 1.5 0 1 1-3 0v-5a1.5 1.5 0 1 1 3 0v5zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span>
+          <div >
+            <input aria-invalid="false" autocomplete="bday" class="D8X Hsu tBJ dyH iFc sAJ L4E Bvi iyn H_e pBj qJc TKt LJB xD4 z-6" id="birthdate" type="date" value="">
+          </div>
+        </span>
+      </div>
+      <div >
+        <button aria-label="Sigue creando tu cuenta de Pinterest"  type="submit">
+          <div >Continuar</div>
+        </button>
+      </div>
+    </form>
+        </div>
+      </section>
+    </main>
+    <!-- el footer lo hago en plan lista de enlaces.  -->
+    <footer>
+      <ul>
+        <li><a href="mailto:">email</a></li>
+        <li><a href="tel:+">telefono</a></li>
+        <li>
+          <address>
+            la calle aquella, en algun lugar de la mancha, España
+          </address>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
