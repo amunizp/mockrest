@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,15 +12,15 @@
     <meta name="keywords" content="images, mock, html" />
     <meta name="author" content="Andres Muniz" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://master--jolly-melomakarona-b3fad0.netlify.app/">
   </head>
   <body>
     <!-- primero el cabecero divido en tres. dos navegaciones uno navegacion a la derecha y otro navegacion a la derecha. el ultimo contiene los botones para registrarse.  -->
     <header>
-      <div id="nav-left">
-        <nav>
-          <ul>
-            <li>
+    
+        <nav id="nav-left">
+          
               <a href="index.html">
                 <svg
                   class="logo-svg"
@@ -34,32 +34,33 @@
                     d="M 12.042178,2.0062317 C 5.557462,1.7602389 0.34566475,8.8435443 2.4893145,14.958751 4.1716173,21.221258 12.476813,24.117639 17.688467,20.255891 23.177499,16.798143 23.488831,8.0099223 18.258252,4.1725488 16.508671,2.7770664 14.279972,2.0006478 12.042178,2.0062317 Z M 9.0588054,8.2866773 c 0.8344975,0 1.6689886,0 2.5034866,0 0.184308,1.154705 0.334017,2.3145637 0.50056,3.4719167 0.146983,-1.157306 0.293971,-2.3146107 0.440961,-3.4719167 0.840577,0 1.681161,0 2.521739,0 0,2.4783287 0,4.9566597 0,7.4349897 -0.563372,0 -1.126743,0 -1.690121,0 0,-1.67315 0,-3.346303 0,-5.01946 -0.225069,1.673157 -0.450142,3.34631 -0.675216,5.01946 -0.399622,0 -0.799245,0 -1.198861,0 -0.23736,-1.634917 -0.474728,-3.269841 -0.712087,-4.904764 0,1.634923 0,3.269847 0,4.904764 -0.563485,0 -1.1269698,0 -1.6904617,0 0,-2.47833 0,-4.956661 1e-7,-7.4349897 z"
                   ></path>
                 </svg>
-                <h1 class="lH1 dyH iFc H2s bwj c8S zDA">Mockrest</h1>
+                Mockrest
               </a>
-            </li>
+          
+            <ul>
+              <li>
             <li>
-              <a href="#search"><h2>Ideas</h2></a>
+              <a href="#search">Ideas</a>
             </li>
           </ul>
         </nav>
-      </div>
-      <div id="nav-right">
+      
+      <nav id="nav-right">
         <ul>
           <li>
-            <a href="info"><h2>Informacion</h2></a>
+            <a href="/info">Informacion</a>
           </li>
           <li>
-            <a href="empresa"><h2>Empresa</h2></a>
+            <a href="/empresa">Empresa</a>
           </li>
           <li>
-            <a href="blog"><h2>Blog</h2></a>
+            <a href="/blog">Blog</a>
           </li>
         </ul>
-      </div>
-      <div>
+      <nav>
         <button type="submit" id="boton-start">Iniciar session</button>
         <button type="submit" id="boton-Reg">Registrarse</button>
-      </div>
+      </nav>
     </header>
     <script src="" async defer></script>
 
@@ -70,64 +71,86 @@
       </p>
     <![endif]-->
     <main>
+<!-- Esta es la parte de Rock the Code mucho mas simple que lo que you intenté más abajo. pero usó article en vez de div. y puso enlaces a cada imagen lo que es mejor. Tambien me faltó poner loading lazy.  -->
+<main>
+  <section id="destacados">
+      <h1>Imágenes Destacadas</h1>
+      <article>
+          <a href="/imagen/123">
+              <img src="imagen1.jpg" alt="Descripción breve de la imagen" loading="lazy">
+              <h2>Título de la imagen</h2>
+          </a>
+          <p>Descripción de la imagen. Esta descripción ayuda al SEO y a la accesibilidad.</p>
+      </article>
+      <!-- Repite el bloque <article> para más imágenes -->
+  </section>
+  <section id="categorias">
+      <h1>Categorías Populares</h1>
+      <ul>
+          <li><a href="/categoria/viajes">Viajes</a></li>
+          <li><a href="/categoria/comida">Comida</a></li>
+          <!-- Más categorías -->
+      </ul>
+  </section>
+</main>
       <!-- dividimos el main en secciones. la primera seccion es un carousell tablas yo aqui hice 2 tablas (la idea es que el css las translada de una a otra). cada tabla tiene un monton de imagenes. 
 lo hice tabla porque noté que el contenido se salia por los bordes al hacer la pantalla mas pequeña y asumi que se podia mas facil con etiquetado de columnas. 
 Asumo que UL acepata pading para posicionarlo-->
       <section id="carrousel">
-        <h3>Encuentra la proxima</h3>
+        <h1>Encuentra la proxima</h1>
         <table id="table1">
           <tbody>
             <tr>
               <td rowspan="2">
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
-              <td colspan="5"><h4>primera tabla</h4></td>
+              <td colspan="5"><h2>primera tabla</h2></td>
               <td rowspan="2">
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
             </tr>
             <tr>
               <td>
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="MinPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="MaxPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="MinPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
             </tr>
@@ -138,54 +161,54 @@ Asumo que UL acepata pading para posicionarlo-->
             <tr>
               <td rowspan="2">
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
-              <td colspan="5"><h4>Segunda tabla</h4></td>
+              <td colspan="5"><h2>Segunda tabla</h2></td>
               <td rowspan="2">
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
             </tr>
             <tr>
               <td>
                 <ul class="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul class="MinPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="MaxPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="MinPadCol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
               <td>
                 <ul id="NoPadcol">
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
-                  <li><img src="avatar.png" alt="avatar" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
+                  <li><img src="avatar.png" alt="avatar" loading="lazy" /></li>
                 </ul>
               </td>
             </tr>
@@ -203,16 +226,16 @@ Asumo que UL acepata pading para posicionarlo-->
               <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
               <div class="overlay"><img src="avatarRota1.png" alt="avatarRota1" /></div>
               <div class="overlay">
-                <h3>
+                <h2>
                   clica en cualquier lado que te llevo a por recetas de pollo
-                </h3>
+                </h2>
               </div>
             </div>
           </a>
         </div>
         <div id="Search-right">
           <div>
-            <h3>Busca cosas guapas</h3>
+            <h2>Busca cosas guapas</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
@@ -226,7 +249,7 @@ Asumo que UL acepata pading para posicionarlo-->
         </div>
       </section>
       <section id="save">
-        <div id="save-left"><h3>Guarda tus ideas</h3>
+        <div id="save-left"><h2>Guarda tus ideas</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
@@ -258,7 +281,7 @@ Asumo que UL acepata pading para posicionarlo-->
         </a>
         </div>
         <div id="shop-right">
-          <h3>Guarda tus ideas</h3>
+          <h2>Guarda tus ideas</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             pariatur optio aperiam odio rerum at, vitae voluptatibus culpa hic
@@ -272,7 +295,7 @@ Asumo que UL acepata pading para posicionarlo-->
       </section>
       <section id="bottom">
         <div id="bottom-left">
-          <h3>Registarate!</h3>
+          <h2>Registarate!</h2>
         </div>
         <div id="bottom right">
         <form  method="POST" novalidate="">
